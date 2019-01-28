@@ -178,7 +178,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         googlePlacesUrl.append("&radius=").append(PROXIMITY_RADIUS);
         googlePlacesUrl.append("&types=").append(type);
         googlePlacesUrl.append("&sensor=true");
-        googlePlacesUrl.append("&key=AIzaSyCgVMkoxpAE-B6xlEZ7lHGfthonYJ02KNI");  //+ GOOGLE_MAPS_KEY);
+        googlePlacesUrl.append("&key=");  //+ GOOGLE_MAPS_KEY);
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET,googlePlacesUrl.toString(), null,
                 new Response.Listener<JSONObject>() {
